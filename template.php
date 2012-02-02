@@ -49,24 +49,6 @@ if (is_null(theme_get_setting('newsflash_style'))) {
   theme_get_setting('', TRUE);
 }
 
-function newsflash_regions() {
-  return array(
-    'sidebar_left' => t('Left Sidebar'),
-    'sidebar_right' => t('Right Sidebar'),
-    'header' => t('Header'),
-    'suckerfish' => t('Suckerfish Menu'),
-    'user1' => t('User1'),
-    'user2' => t('User2'),
-    'user3' => t('User3'),
-    'content_top' => t('Content Top'),
-    'content_bottom' => t('Content Bottom'),
-    'user4' => t('User4'),
-    'user5' => t('User5'),
-    'user6' => t('User6'),
-    'footer' => t('Footer'),
-  );
-} 
-
 function get_newsflash_style() {
   $style = theme_get_setting('newsflash_style');
   if (!$style)
